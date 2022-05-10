@@ -31,12 +31,14 @@ public class ParkingSpotModel implements Serializable {
 	private String colorCar;
 	@Column(nullable = false)
 	private LocalDateTime registrationDate;
-	@Column(nullable = false, length = 10)
+	@Column(nullable = false, length = 30)
 	private String responsibleName;
 	@Column(nullable = false, length = 30)
 	private String apartment;
 	@Column(nullable = false, length = 30)
 	private String block;
+	
+	
 	public UUID getId() {
 		return id;
 	}
